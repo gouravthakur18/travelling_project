@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Booking Confirmation</title>
+    <style>
+        /* Main styling */
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background: linear-gradient(to right, #6EC5E9, #2196F3);
+            color: #333;
+        }
+
+        /* Confirmation card */
+        .confirmation-card {
+            background-color: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+            max-width: 400px;
+            text-align: center;
+        }
+
+        /* Icon styling */
+        .icon {
+            font-size: 50px;
+            color: #4CAF50;
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            font-size: 24px;
+            color: #333;
+            margin: 10px 0;
+        }
+
+        p {
+            color: #666;
+            font-size: 16px;
+            margin: 10px 0 20px;
+        }
+
+        /* Button styling */
+        .confirmation-card button {
+            padding: 12px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: #2196F3;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin: 5px;
+        }
+
+        .confirmation-card button:hover {
+            background-color: #1b7ccc;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="confirmation-card">
+        <div class="icon">🏨</div>
+        <h1>Booking Confirmed!</h1>
+        <p>Thank you for booking with us. Your hotel reservation is confirmed!</p>
+        <p>We look forward to welcoming you to your destination.</p>
+
+
+        <button onclick="location.href='booking-details.html'">View Booking Details</button>
+
+        <button onclick="location.href='home.html'">Back to Home</button>
+    </div>
+
+</body>
+
+</html>

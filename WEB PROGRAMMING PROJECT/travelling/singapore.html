@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Singapore</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #f7f7f7;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 90%;
+            margin: auto;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-links li {
+            margin-left: 20px;
+        }
+
+        .nav-links li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+
+        .nav-links li a:hover {
+            color: #f0a500;
+        }
+
+        .section {
+            margin-top: 40px;
+            padding: 20px;
+            background-color: rgb(255, 227, 227);
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.1em;
+            line-height: 1.8;
+        }
+
+        img {
+            height: 400px;
+            width: 550px;
+        }
+
+        .attractions {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .attractions article {
+            background-color: rgb(120, 157, 188);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .attractions h3 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 10px 0;
+            background-color: #333;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">TravelGo</div>
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="explore.html">Destinations</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="section">
+        <h2>About Singapore</h2>
+        <p>Singapore, a global financial hub and a melting pot of cultures, is a small yet vibrant island nation located
+            at the southern tip of the Malay Peninsula. Known for its futuristic skyline, green spaces, and diverse
+            culinary scene, Singapore has become one of the top travel destinations in the world.</p>
+    </section>
+
+    <section class="section">
+        <h2>Top Attractions in Singapore</h2>
+        <div class="attractions">
+            <article>
+                <img src="/photos/marinabaysands.avif">
+                <h3>Marina Bay Sands</h3>
+                <p>Marina Bay Sands is an iconic integrated resort known for its luxurious hotel, rooftop infinity pool,
+                    and shopping mall, offering a spectacular view of Singapore's skyline.</p>
+            </article>
+            <article>
+                <img src="/photos/gardensbythebay.jpeg">
+                <h3>Gardens by the Bay</h3>
+                <p>Gardens by the Bay is a futuristic park featuring the Supertree Grove, Cloud Forest, and Flower Dome.
+                    It is a stunning example of how nature and modern technology come together.</p>
+            </article>
+            <article>
+                <img src="/photos/sentosaisland.jpg">
+                <h3>Sentosa Island</h3>
+                <p>Sentosa Island is Singapore's premier leisure destination, home to theme parks, luxury resorts, and
+                    beautiful beaches. It's a perfect getaway for family fun and entertainment.</p>
+            </article>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>Singapore's Culture</h2>
+        <p>Singapore’s culture is a blend of Chinese, Malay, Indian, and Western influences. This diversity is reflected
+            in its festivals, architecture, and traditions. The city is also known for its strict regulations and high
+            standard of living, contributing to its reputation as one of the world's cleanest and safest cities.</p>
+    </section>
+
+    <section class="section">
+        <h2>Cuisine in Singapore</h2>
+        <p>Singapore's food scene is legendary. From hawker centers offering affordable street food to high-end
+            restaurants, the city is a paradise for food lovers. Local favorites include Hainanese chicken rice, chili
+            crab, and laksa. Its multicultural population ensures a wide range of culinary delights from various
+            regions.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Singapore Travel Guide. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

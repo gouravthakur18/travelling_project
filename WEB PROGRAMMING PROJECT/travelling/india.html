@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore India</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 90%;
+            margin: auto;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-links li {
+            margin-left: 20px;
+        }
+
+        .nav-links li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+
+        .nav-links li a:hover {
+            color: #f0a500;
+        }
+
+        .section {
+            margin-top: 40px;
+            padding: 20px;
+            background-color: rgb(245, 244, 179);
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        img {
+            height: 400px;
+            width: 550px;
+        }
+
+        h2 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.1em;
+            line-height: 1.8;
+        }
+
+        .attractions {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .attractions article {
+            background-color: rgb(76, 201, 254);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .attractions h3 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 10px 0;
+            background-color: #333;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">TravelGo</div>
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="explore.html">Destinations</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about" class="section">
+        <h2>About India</h2>
+        <p>India, a land of diversity and cultural richness, is the seventh-largest country in the world and home to
+            over a billion people. From the snowy peaks of the Himalayas to the tropical greenery of Kerala, India
+            offers a vast landscape of diverse geography, history, and heritage. It is a melting pot of ancient
+            civilizations, spirituality, and traditions.</p>
+    </section>
+
+    <section id="attractions" class="section">
+        <h2>Top Attractions in India</h2>
+        <div class="attractions">
+            <article>
+                <img src="/photos/tajmahal.avif">
+                <h3>Taj Mahal</h3>
+                <p>The Taj Mahal, located in Agra, is one of the seven wonders of the world. This stunning marble
+                    mausoleum, built by Emperor Shah Jahan for his beloved wife Mumtaz Mahal, is a symbol of love and an
+                    architectural marvel.</p>
+            </article>
+            <article>
+                <img src="/photos/pinkpalace.jpg">
+                <h3>Jaipur - The Pink City</h3>
+                <p>Jaipur, the capital of Rajasthan, is known for its pink-hued buildings and royal palaces. Visit the
+                    City Palace, Hawa Mahal, and Amer Fort to experience India’s royal history.</p>
+            </article>
+            <article>
+                <img src="/photos/lehladakh.jpg">
+                <h3>Leh Ladakh</h3>
+                <p>Leh Ladakh is famous for its breathtaking landscapes, including rugged mountains, pristine lakes, and
+                    vast valleys. Known for its
+                    rich Buddhist culture, the area is home to stunning monasteries like Hemis and Thiksey, attracting
+                    adventure seekers and
+                    spiritual travelers alike.</p>
+            </article>
+        </div>
+    </section>
+
+    <section id="culture" class="section">
+        <h2>India's Culture</h2>
+        <p>India's culture is one of the oldest in the world, enriched by various religions, languages, and festivals.
+            Festivals such as Diwali, Holi, and Eid are celebrated with grandeur, showcasing the unity in diversity. The
+            vibrant traditions, classical music, dance forms like Bharatanatyam and Kathak, and Indian cinema
+            (Bollywood) are integral to India's cultural heritage.</p>
+    </section>
+
+    <section id="cuisine" class="section">
+        <h2>Cuisine in India</h2>
+        <p>Indian cuisine is a delightful mixture of spices, flavors, and regional specialties. Each state has its own
+            unique dishes, from North India's tandoori cuisine to South India's dosas and sambar. Don’t miss popular
+            dishes like biryani, butter chicken, and street food favorites like samosas and pani puri.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 India Travel Guide. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

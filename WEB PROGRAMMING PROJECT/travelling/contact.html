@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Travel Website</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">TravelGo</div>
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="explore.html">Destinations</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="contact">
+        <h1>Contact or Visit Us</h1>
+        <p>Phone No : +91 7807165849, +91 7876619942</p>
+        <p>Email : akshitrangra85@gmail.com , gourav10august2003@gmail.com</p>
+        <p>Address : Chandigarh University, kharar , Punjab 140413</p>
+        <form onsubmit="return data()">
+            <div>
+                <input type="text" placeholder="Name*" id="n1">
+                <br>
+                <br>
+                <input type="text" placeholder="Email*" id="n2">
+                <br>
+                <br>
+                <input type="text" placeholder="Subject">
+                <br>
+                <br>
+                <textarea name="message" placeholder="Message"></textarea>
+            </div>
+            <br>
+            <button type="submit">Send us Message</button>
+        </form>
+    </section>
+    <script>
+        function data() {
+            var name = document.getElementById("n1").value;
+            var email = document.getElementById("n2").value;
+            if (a == "" || b == "") {
+                alert("all fields are mandatory.");
+                return false;
+            }
+            else if (!email.match(emailPattern)) {
+                alert("please enter a correct email address");
+                return false;
+            }
+            return true;
+        }
+    </script>
+
+    <footer>
+        <h6>&copy; 2024 TravelGo. All rights reserved.</h6>
+    </footer>
+</body>
+
+</html>

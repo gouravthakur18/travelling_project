@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The City of Lights</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #f7f7f7;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 90%;
+            margin: auto;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-links li {
+            margin-left: 20px;
+        }
+
+        .nav-links li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+
+        .nav-links li a:hover {
+            color: #f0a500;
+        }
+
+        .section {
+            margin-top: 40px;
+            padding: 20px;
+            background-color: rgb(203, 210, 164);
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.1em;
+            line-height: 1.8;
+        }
+
+        img {
+            height: 400px;
+            width: 550px;
+        }
+
+        .landmarks {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .landmarks article {
+            background-color:rgb(233, 238, 217);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .landmarks h3 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 10px 0;
+            background-color: #333;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">TravelGo</div>
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="explore.html">Destinations</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="section">
+        <h2>About Paris</h2>
+        <p>Paris, the capital city of France, is one of the most beautiful and historically rich cities in the world.
+            Known as "La Ville Lumière" (The City of Light), Paris is famous for its cafes, fashion, art museums, and
+            monuments.</p>
+    </section>
+
+    <section class="section">
+        <h2>Famous Landmarks</h2>
+        <div class="landmarks">
+            <article>
+                <img src="/photos/parisheaderpic.jpg">
+                <h3>Eiffel Tower</h3>
+                <p>The Eiffel Tower is one of the most recognizable structures in the world. It was built by Gustave
+                    Eiffel for the 1889 World's Fair.</p>
+            </article>
+            <article>
+                <img src="/photos/louvremuseum.webp">
+                <h3>Louvre Museum</h3>
+                <p>The Louvre is the world's largest art museum, housing famous works like the Mona Lisa and the Venus
+                    de Milo.</p>
+            </article>
+            <article>
+                <img src="/photos/destinationparisimage.webp">
+                <h3>Notre-Dame Cathedral</h3>
+                <p>Notre-Dame de Paris is a medieval Catholic cathedral known for its French Gothic architecture.</p>
+            </article>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>Culture</h2>
+        <p>Paris has been a global center for art, fashion, gastronomy, and culture. With numerous museums, theaters,
+            and galleries, the city thrives in creative expression and history.</p>
+    </section>
+
+    <section class="section">
+        <h2>Cuisine</h2>
+        <p>Parisian cuisine is world-renowned, from delicious pastries like croissants and macarons to exquisite French
+            dining experiences. Don't miss out on trying French onion soup and baguettes while in Paris!</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 TravelGo. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

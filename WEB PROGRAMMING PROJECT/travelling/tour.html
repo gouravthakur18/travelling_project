@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Trip</title>
+    <style>
+        .booking-form {
+            padding: 40px;
+            background-color: #f9f9f9;
+            margin: 20px auto;
+            max-width: 800px;
+            border-radius: 8px;
+        }
+
+        .booking-form h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .form-group input,
+        .form-group select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        button[type="submit"] {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        .error-message {
+            color: red;
+            font-size: 0.9em;
+            margin-top: 10px;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="booking-form">
+        <h2>Book Your Trip</h2>
+        <form id="bookingForm" action="flight-confirmation.html" method="GET">
+            <div class="form-group">
+                <label for="from">From:</label>
+                <input type="text" id="from" placeholder="Enter departure city or airport">
+                <p class="error-message" id="fromError">Please enter a departure city.</p>
+            </div>
+            <div class="form-group">
+                <label for="to">To:</label>
+                <input type="text" id="to" placeholder="Enter destination city or airport">
+                <p class="error-message" id="toError">Please enter a destination city.</p>
+            </div>
+            <div class="form-group">
+                <label for="departure">Departure Date:</label>
+                <input type="date" id="departure">
+                <p class="error-message" id="departureError">Please select a departure date.</p>
+            </div>
+            <div class="form-group">
+                <label for="return">Return Date:</label>
+                <input type="date" id="return">
+            </div>
+            <div class="form-group">
+                <label for="passengers">Passengers:</label>
+                <select id="passengers">
+                    <option value="1">1 Adult</option>
+                    <option value="2">2 Adults</option>
+                    <option value="3">3 Adults</option>
+                    <option value="4">4 Adults</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="class">Class:</label>
+                <select id="class" name="class" required>
+                    <option value="economy">Economy</option>
+                    <option value="business">Business</option>
+                    <option value="first">First Class</option>
+                </select>
+            </div>
+
+            <button type="submit">Search Flights</button>
+        </form>
+    </section>
+
+    <script>
+        document.getElementById('bookingForm').addEventListener('submit', function (event) {
+
+            const fromField = document.getElementById('from');
+            const toField = document.getElementById('to');
+            const departureField = document.getElementById('departure');
+            const returnField = document.getElementById('return');
+            const passengersField = document.getElementById('passengers');
+            const classField = document.getElementById('class');
+
+            let isValid = true;
+
+            // Clear previous errors
+            const errorFields = [fromField, toField, departureField];
+            errorFields.forEach(field => field.classList.remove('error'));
+
+            // Validation logic
+            if (fromField.value.trim() === '') {
+                alert('Please enter a departure city.');
+                fromField.classList.add('error');
+                isValid = false;
+            }
+
+            if (toField.value.trim() === '') {
+                alert('Please enter a destination city.');
+                toField.classList.add('error');
+                isValid = false;
+            }
+
+            if (departureField.value === '') {
+                alert('Please select a departure date.');
+                departureField.classList.add('error');
+                isValid = false;
+            }
+
+            if (passengersField.value === '') {
+                alert('Please select the number of passengers.');
+                passengersField.classList.add('error');
+                isValid = false;
+            }
+
+            if (classField.value === '') {
+                alert('Please select a flight class.');
+                classField.classList.add('error');
+                isValid = false;
+            }
+
+            // If any validation fails, prevent form submission
+            if (!isValid) {
+                event.preventDefault();
+            } else {
+                // If validation passes, save data to localStorage and proceed to confirmation page
+                localStorage.setItem('from', fromField.value);
+                localStorage.setItem('to', toField.value);
+                localStorage.setItem('departure', departureField.value);
+                localStorage.setItem('return', returnField.value || 'Not selected');
+                localStorage.setItem('passengers', passengersField.value);
+                localStorage.setItem('class', classField.value);
+
+                // Redirect to confirmation page
+                window.location.href = 'flight-confirmation.html';
+            }
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Confirmation | TravelGo</title>
+
+    <style>
+        .confirmation-page {
+            padding: 40px;
+            background-color: #f9f9f9;
+            margin: 20px auto;
+            max-width: 800px;
+            border-radius: 8px;
+        }
+
+        .confirmation-page h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .summary {
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+        }
+
+        .summary h3 {
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+
+        .summary p {
+            margin: 5px 0;
+        }
+
+        .btn-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .btn-container button {
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .btn-container button:hover {
+            background-color: #218838;
+        }
+
+        .back-button {
+            padding: 10px 20px;
+            background-color: #dc3545;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+
+        .back-button:hover {
+            background-color: #c82333;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="confirmation-page">
+        <h2>Flight Booking Confirmation</h2>
+        <div class="summary">
+            <h3>Booking Details</h3>
+            <p><strong>From:</strong> <span id="from-summary"></span></p>
+            <p><strong>To:</strong> <span id="to-summary"></span></p>
+            <p><strong>Departure Date:</strong> <span id="departure-summary"></span></p>
+            <p><strong>Return Date:</strong> <span id="return-summary"></span></p>
+            <p><strong>Passengers:</strong> <span id="passengers-summary"></span></p>
+            <p><strong>Class:</strong> <span id="class-summary"></span></p>
+        </div>
+
+        <div class="btn-container">
+            <button id="confirm-btn">Confirm Booking</button>
+            <button class="back-button" onclick="window.history.back()">Go Back</button>
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const from = localStorage.getItem('from');
+            const to = localStorage.getItem('to');
+            const departure = localStorage.getItem('departure');
+            const returnDate = localStorage.getItem('return') || 'Not selected';
+            const passengers = localStorage.getItem('passengers');
+            const flightClass = localStorage.getItem('class');
+
+            document.getElementById('from-summary').textContent = from;
+            document.getElementById('to-summary').textContent = to;
+            document.getElementById('departure-summary').textContent = departure;
+            document.getElementById('return-summary').textContent = returnDate;
+            document.getElementById('passengers-summary').textContent = passengers;
+            document.getElementById('class-summary').textContent = flightClass;
+        });
+
+        document.getElementById('confirm-btn').addEventListener('click', function () {
+            alert('Your flight has been booked successfully!');
+            window.location.href = 'booking.html';
+        });
+    </script>
+</body>
+
+</html>

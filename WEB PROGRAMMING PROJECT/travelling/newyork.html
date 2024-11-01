@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore New York City</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 90%;
+            margin: auto;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-links li {
+            margin-left: 20px;
+        }
+
+        .nav-links li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+
+        .nav-links li a:hover {
+            color: #f0a500;
+        }
+
+        .section {
+            margin-top: 40px;
+            padding: 20px;
+            background-color: rgb(210, 224, 251);
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        img {
+            height: 400px;
+            width: 550px;
+        }
+
+        h2 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.1em;
+            line-height: 1.8;
+        }
+
+        .attractions {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .attractions article {
+            background-color: rgb(222, 229, 212);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .attractions h3 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 10px 0;
+            background-color: #333;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">TravelGo</div>
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="explore.html">Destinations</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="section">
+        <h2>About New York City</h2>
+        <p>New York City, often called "The Big Apple," is one of the most famous cities in the world. Known for its
+            skyline, cultural diversity, and iconic landmarks, NYC is a hub of finance, entertainment, and art. Whether
+            you're walking through Central Park or enjoying the vibrant streets of Manhattan, there's always something
+            happening in New York.</p>
+    </section>
+
+    <section class="section">
+        <h2>Top Attractions in New York City</h2>
+        <div class="attractions">
+            <article>
+                <img src="/photos/statueofliberty.jpeg">
+                <h3>Statue of Liberty</h3>
+                <p>The Statue of Liberty, a symbol of freedom, is one of the most recognizable landmarks in the world.
+                    You can take a ferry to Liberty Island and tour this iconic monument.</p>
+            </article>
+            <article>
+                <img src="/photos/centralpark.jpg">
+                <h3>Central Park</h3>
+                <p>Central Park, a vast green oasis in the middle of Manhattan, is perfect for walking, cycling, or
+                    simply relaxing. Don't miss the Central Park Zoo or the Bethesda Fountain.</p>
+            </article>
+            <article>
+                <img src="/photos/timesquare.jpg">
+                <h3>Times Square</h3>
+                <p>Times Square is the heart of Manhattan's Theater District and is famous for its bright lights,
+                    Broadway shows, and the New Year's Eve ball drop celebration.</p>
+            </article>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>New York City's Culture</h2>
+        <p>New York City is a melting pot of cultures from around the globe. It is a hub for the arts, with
+            world-renowned museums like the Metropolitan Museum of Art and MoMA, as well as a vibrant theater scene on
+            Broadway. Street art, jazz clubs, and music festivals are just a few ways NYC showcases its creative spirit.
+        </p>
+    </section>
+
+    <section class="section">
+        <h2>Cuisine in New York City</h2>
+        <p>New York City's cuisine reflects its cultural diversity. Whether you’re enjoying a slice of classic New
+            York-style pizza, grabbing a hot dog from a street vendor, or dining at a Michelin-star restaurant, NYC is a
+            food lover's paradise. Make sure to visit its vibrant food markets and Chinatown for a culinary adventure.
+        </p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 NYC Travel Guide. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

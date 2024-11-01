@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Australia</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #f7f7f7;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 90%;
+            margin: auto;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-links li {
+            margin-left: 20px;
+        }
+
+        .nav-links li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+
+        .nav-links li a:hover {
+            color: #f0a500;
+        }
+
+        .section {
+            margin-top: 40px;
+            padding: 20px;
+            background-color: rgb(196, 225, 246);
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.1em;
+            line-height: 1.8;
+        }
+
+        img {
+            height: 400px;
+            width: 550px;
+        }
+
+        .attractions {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .attractions article {
+            background-color: rgb(254, 238, 145);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .attractions h3 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 10px 0;
+            background-color: #333;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">TravelGo</div>
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="explore.html">Destinations</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="section">
+        <h2>About Australia</h2>
+        <p>Australia, the land down under, is known for its diverse landscapes, unique wildlife, and vibrant cities. It
+            is the sixth-largest country in the world, famous for its natural wonders like the Great Barrier Reef, the
+            Outback, and its world-class cities such as Sydney and Melbourne.</p>
+    </section>
+
+    <section class="section">
+        <h2>Top Attractions in Australia</h2>
+        <div class="attractions">
+            <article>
+                <img src="/photos/GreatBarrierReef.avif">
+                <h3>Great Barrier Reef</h3>
+                <p>The Great Barrier Reef, the world's largest coral reef system, is a UNESCO World Heritage Site and a
+                    popular destination for snorkeling and diving.</p>
+            </article>
+            <article>
+                <img src="/photos/sydneyoperahouse.jpg">
+                <h3>Sydney Opera House</h3>
+                <p>The Sydney Opera House, with its iconic sail-like design, is a world-famous performing arts center
+                    and a must-see attraction in Sydney.</p>
+            </article>
+            <article>
+                <img src="/photos/australiaphoto.avif">
+                <h3>Uluru (Ayers Rock)</h3>
+                <p>Uluru, located in the Northern Territory, is a massive sandstone monolith sacred to the indigenous
+                    Anangu people. It is one of Australia's most iconic landmarks.</p>
+            </article>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>Australia's Culture</h2>
+        <p>Australia's culture is a rich blend of indigenous heritage and immigrant influences. From the Aboriginal
+            traditions that date back over 65,000 years to the multicultural communities in modern cities, Australia is
+            known for its laid-back lifestyle, love of sports, and vibrant arts scene.</p>
+    </section>
+
+    <section class="section">
+        <h2>Cuisine in Australia</h2>
+        <p>Australia's cuisine is as diverse as its people. While traditional BBQs and meat pies are popular, the
+            country also offers a wide array of seafood, international cuisines, and fresh local produce. Don’t forget
+            to try Vegemite on toast, a true Aussie classic!</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Australia Travel Guide. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

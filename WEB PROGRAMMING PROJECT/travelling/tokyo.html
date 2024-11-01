@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tokyo - The Vibrant Metropolis</title>
+    <style>
+          * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 90%;
+            margin: auto;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-links li {
+            margin-left: 20px;
+        }
+
+        .nav-links li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+
+        .nav-links li a:hover {
+            color: #f0a500;
+        }
+
+        .section {
+            margin-top: 40px;
+            padding: 20px;
+            background-color: rgb(212, 189, 172);
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        img {
+            height: 400px;
+            width: 550px;
+        }
+
+        h2 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.1em;
+            line-height: 1.8;
+        }
+
+        .attractions {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .attractions article {
+            background-color: rgb(83, 100, 147);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .attractions h3 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 10px 0;
+            background-color: #333;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">TravelGo</div>
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="explore.html">Destinations</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="section">
+        <h2>About Tokyo</h2>
+        <p>Tokyo, the bustling capital of Japan, is a dynamic blend of ultramodern skyscrapers, historic temples, and a
+            rich cultural scene. Known for its cutting-edge technology, world-class dining, and vibrant neighborhoods,
+            Tokyo is a city that never sleeps.</p>
+    </section>
+
+    <section class="section">
+        <h2>Top Attractions</h2>
+        <div class="attractions">
+            <article>
+                <img src="/photos/shibuyacrossing.jpg">
+                <h3>Shibuya Crossing</h3>
+                <p>One of the busiest pedestrian crossings in the world, Shibuya Crossing is an iconic symbol of Tokyo’s
+                    fast-paced lifestyle.</p>
+            </article>
+            <article>
+                <img src="/photos/tokyotower.jpg">
+                <h3>Tokyo Tower</h3>
+                <p>The Tokyo Tower is a communications and observation tower offering breathtaking views of the city,
+                    especially at night.</p>
+            </article>
+            <article>
+                <img src="/photos/tamikointokyo.webp">
+                <h3>Asakusa and Senso-ji Temple</h3>
+                <p>Visit the historic Asakusa district and the famous Senso-ji, Tokyo’s oldest Buddhist temple, to
+                    experience traditional Japanese culture.</p>
+            </article>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>Culture</h2>
+        <p>Tokyo's culture is a unique mix of tradition and modernity. From centuries-old tea ceremonies and sumo
+            wrestling to cutting-edge anime, manga, and fashion, Tokyo embodies a vibrant cultural mosaic.</p>
+    </section>
+
+    <section class="section">
+        <h2>Cuisine</h2>
+        <p>Tokyo is a culinary paradise, offering everything from Michelin-starred restaurants to cozy ramen shops.
+            Don't miss out on trying sushi, tempura, and the local specialty, monjayaki.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Tokyo Travel Guide. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
